@@ -1,0 +1,32 @@
+Package: GXEadjustedNMR
+Title: GxE-Adjusted Nonlinear Mendelian Randomization
+Version: 0.1.0
+Authors@R: 
+    person("Yifan", "Kong", email = "kongyifan@hust.com", role = c("aut", "cre"))
+Description: Implements a GxE-adjusted nonlinear Mendelian randomization workflow. 
+    The package wraps fastGxE and mmSuSiE outputs, constructs GxE-adjusted exposures, 
+    computes main-effect PRS, performs ranked-stratification nonlinear MR, estimates 
+    LACE, and provides plotting utilities.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports:
+    data.table,
+    dplyr,
+    tidyr,
+    ggplot2,
+    TwoSampleMR,
+    OneSampleMR,
+    SUMnlmr,
+    metafor,
+    stats,
+    utils
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
